@@ -49,9 +49,12 @@ class Contrast_Compress_Admin {
 	 */
 	public function __construct( $plugin_name, $version ) {
 
-		$this->plugin_name = $plugin_name;
-		$this->version = $version;
+		$this->plugin_name       = $plugin_name;
+		$this->version           = $version;
+
 		$this->contrastImageSlug = "contrast-compress";
+		$this->JPEGCompression   = 75;
+		$this->contrastRatio     = 50;
 
 	}
 
@@ -127,7 +130,7 @@ class Contrast_Compress_Admin {
 
 	    if ( ! is_file($file) ){ return $meta; }
 
-	    imagefilter($image, IMG_FILTER_CONTRAST, 50);
+	    imagefilter( $image, IMG_FILTER_CONTRAST, $this->contrastRatio );
 
 	    switch ( $orig_type ) {
 
@@ -140,7 +143,7 @@ class Contrast_Compress_Admin {
 	            break;
 
 	        case IMAGETYPE_JPEG:
-	            imagejpeg( $image, $file );
+	            imagejpeg( $image, $file, $this->JPEGCompression );
 	            break;
 
 	    }

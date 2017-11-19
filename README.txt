@@ -14,13 +14,11 @@ Compress images using the [CSS Contrast Filter hack](https://css-tricks.com/cont
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+	[TODO] This section describes how to install the plugin and get it working.
 
-e.g.
-
-1. Upload `contrast-compress.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+	1. Upload `contrast-compress.php` to the `/wp-content/plugins/` directory
+	1. Activate the plugin through the 'Plugins' menu in WordPress
+	1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
 
 == Frequently Asked Questions ==
 
@@ -55,4 +53,3 @@ https://codepen.io/una/pen/NwPPEg
 WP Image Editor
 https://bhoover.com/wp_image_editor-wordpress-image-editing-tutorial/
 https://markoheijnen.com/wordpress-new-image-manipulation/
-
