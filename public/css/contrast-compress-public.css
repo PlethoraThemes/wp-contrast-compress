@@ -1,0 +1,10 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+img.attachment-contrast-compress,
+img.contrast-compress {
+
+	filter: contrast(3.7) brightness(1.1);
+
+}	
